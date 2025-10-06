@@ -35,7 +35,6 @@ def parse_vmaf_detailed(json_file: str) -> Dict[str, Any]:
             'mean': float(vmaf_metrics['mean']),
             'min': float(vmaf_metrics['min']),
             'max': float(vmaf_metrics['max']),
-            'std': float(vmaf_metrics['std'])
         }
 
     except KeyError as e:
